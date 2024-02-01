@@ -1,0 +1,35 @@
+---
+import StudiesItem from "./StudiesItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Currently...",
+    title: "Student at University of Cauca",
+    description:
+      "As an eighth-semester student pursuing a degree in Systems Engineering at the University of Cauca, my academic journey has been a dynamic exploration of the intricate intersections between technology and problem-solving. Throughout my tenure, I have delved into a diverse range of subjects, honing my skills in programming, system design, and data management.",
+  },
+  {
+    date: "November 2022",
+    title: "Getting Started with Deep Learning: Nvidea",
+    description:
+      "In the introductory Deep Learning course at NVIDIA, I gained fundamental knowledge of neural networks, particularly using TensorFlow. Combined with my university studies in Systems Engineering, I have developed a solid understanding of artificial intelligence, strengthening my skills in this field.",
+    link: "https://courses.nvidia.com/certificates/69f48e8965a7477489b0d2e6be0cef2b/"
+  },
+  {
+    date: "April 2022",
+    title: "Fundamentos profesionales del desarrollo de software: Microsoft y LinkedIn",
+    description:
+      "In the \"Fundamentos profesionales del desarrollo de software: Microsoft y LinkedIn\" course at Microsoft and LinkedIn, I'm gained essential skills and practical insights into coding principles and software architecture.",
+    link: "https://www.linkedin.com/learning/certificates/13780bbae12ea20fb7e8b26cdc7f9ca3fc090269719fe450dcd01452da7bae93?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BqcQzC1bdQi6hRGoiresRDw%3D%3D"
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="mb-10 ms-4">
+        <StudiesItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
