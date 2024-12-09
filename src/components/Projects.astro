@@ -33,7 +33,7 @@ const PROJECTS = [
     title: "EvalUnicauca: Website for self-assessment of teachers.",
     description:
       "Web platform for self-assessment, specifically designed for faculty members at the University of Cauca. This tool allows educators to easily evaluate their teaching methodologies and track professional development.",
-    link: "https://github.com/Jaycom17/app-autoevaluaciones",
+    github: "https://github.com/Jaycom17/app-autoevaluaciones",
     image: "./evalunicauca.png",
     tags: [TAGS.NEXT, TAGS.NODE, TAGS.MYSQL, TAGS.EXPRESS],
   },
@@ -83,7 +83,8 @@ const PROJECTS = [
               Source Code
             </LinkButton>
           )}
-          <LinkButton href={link}>
+          {link && (
+            <LinkButton href={link}>
             <svg
               width="24"
               height="24"
@@ -109,6 +110,7 @@ const PROJECTS = [
             </svg>
             Web Site
           </LinkButton>
+          )}
         </footer>
       </article>
     ))
